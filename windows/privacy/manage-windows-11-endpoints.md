@@ -63,7 +63,6 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||HTTP|c-ring.msedge.net|
 |||TLSv1.2/HTTPS/HTTP|fp.msedge.net|
 |||TLSv1.2|I-ring.msedge.net|
-|||TLSv1.2/TLSv1.3/HTTPS|*.msedge.net|
 |||HTTPS/HTTP|s-ring.msedge.net|
 |||HTTP|dual-s-ring.msedge.net|
 |||HTTP|creativecdn.com|
@@ -74,33 +73,6 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||TLSv1.2|prod-azurecdn-akamai-iris.azureedge.net|
 |||TLSv1.2|widgetcdn.azureedge.net|
 |||TLSv1.2|widgetservice.azurefd.net|
-|||TLSv1.2/TLSv1.3/HTTPS|*.azr.footprintdns.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*.clo.footprintdns.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*.azchcdnk.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.chinacloudapi.cn|
-|||TLSv1.2/TLSv1.3/HTTPS|*.blob.core.chinacloudapi.cn|
-|||TLSv1.2/TLSv1.3/HTTPS|*-canary.azurecloudapp.de|
-|||TLSv1.2/TLSv1.3/HTTPS|azwancan.trafficmanager.net|
-|||TLSv1.2/TLSv1.3/HTTPS|azwanp.trafficmanager.net|
-|||TLSv1.2/TLSv1.3/HTTPS|azwantest2germany.trafficmanager.net|
-|||TLSv1.2/TLSv1.3/HTTPS|geo.trafficmanager.net|
-|||TLSv1.2/TLSv1.3/HTTPS|*-canary-opaph.netmon.azure.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.azure.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*.cloudapp.azure.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*.management.azure.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*-canary-opaph.netmon.azure.us|
-|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.azure.us|
-|||TLSv1.2/TLSv1.3/HTTPS|afd.azureedge.net|
-|||TLSv1.2/TLSv1.3/HTTPS|*.rp.afd.azureedge-test.net|
-|||TLSv1.2/TLSv1.3/HTTPS|afd.azureedge.us|
-|||TLSv1.2/TLSv1.3/HTTPS|*.z01.azurefd.net|
-|||TLSv1.2/TLSv1.3/HTTPS|*-afd.azurefd.net|
-|||TLSv1.2/TLSv1.3/HTTPS|graph.azurefd.net|
-|||TLSv1.2/TLSv1.3/HTTPS|roxy.azurefd.net|
-|||TLSv1.2/TLSv1.3/HTTPS|fp-afd.azurefd.us|
-|||TLSv1.2/TLSv1.3/HTTPS|*.perf.linkedin.com|
-|||TLSv1.2/TLSv1.3/HTTPS|static-ecst.licdn.com|
-|||TLSv1.2/TLSv1.3/HTTPS|*.officeapps.live.com|
 |Device authentication|||[Learn how to turn off traffic to all of the following endpoint(s) for device authentication.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 ||The following endpoint is used to authenticate a device. If you turn off traffic for this endpoint, the device won't be authenticated.|HTTPS|login.live.com*|
 |Device metadata|||[Learn how to turn off traffic to all of the following endpoint(s) for device metadata.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
@@ -120,6 +92,40 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 ||The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.|TLSv1.2/HTTPS/HTTP|licensing.mp.microsoft.com|
 |Location|||[Learn how to turn off traffic to all of the following endpoint(s) for location.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#182-location)|
 ||The following endpoint is used for location data. If you turn off traffic for this endpoint, apps can't use location data.|TLSv1.2|inference.location.live.net|
+|Map of Internet Services||||
+||The following endpoints are used to provide measurements to Microsoft services that enable fast routing of requests to Microsoft CDN resources. If you turn off traffic for these endpoints, your device will not contribute to performance maps for this service.|TLSv1.2/TLSv1.3/HTTPS/HTTP|fp.msedge.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*.azchcdnk.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.azr.footprintdns.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.blob.core.chinacloudapi.cn|
+|||TLSv1.2/TLSv1.3/HTTPS|*.clo.footprintdns.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.cloudapp.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.management.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.msedge.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*.officeapps.live.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.perf.linkedin.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.res.office365.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.rp.afd.azureedge-test.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*.z01.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*-afd.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.azurecloudapp.de|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.azure.us|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.chinacloudapi.cn|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary-opaph.netmon.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary-opaph.netmon.azure.us|
+|||TLSv1.2/TLSv1.3/HTTPS|afd.azureedge.net|
+|||TLSv1.2/TLSv1.3/HTTPS|afd.azureedge.us|
+|||TLSv1.2/TLSv1.3/HTTPS|azwancan.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|azwanp.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|azwantest2germany.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|fp-afd.azurefd.us|
+|||TLSv1.2/TLSv1.3/HTTPS|geo.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|graph.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|graph.microsoft.com|
+|||TLSv1.2/TLSv1.3/HTTPS|gtm-dyn-direct.office365.com|
+|||TLSv1.2/TLSv1.3/HTTPS|outlook.office365.com|
+|||TLSv1.2/TLSv1.3/HTTPS|roxy.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|static-ecst.licdn.com|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s) for maps.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
 ||The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps won't be updated.|TLSv1.2/HTTPS/HTTP|maps.windows.com|
 |||HTTP|ecn.dev.virtualearth.net|
