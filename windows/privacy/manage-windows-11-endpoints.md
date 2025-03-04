@@ -99,6 +99,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||TLSv1.2/TLSv1.3/HTTPS|*.blob.core.chinacloudapi.cn|
 |||TLSv1.2/TLSv1.3/HTTPS|*.clo.footprintdns.com|
 |||TLSv1.2/TLSv1.3/HTTPS|*.cloudapp.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.cloudfront.net|
 |||TLSv1.2/TLSv1.3/HTTPS|*.management.azure.com|
 |||TLSv1.2/TLSv1.3/HTTPS|*.msedge.net|
 |||TLSv1.2/TLSv1.3/HTTPS|*.officeapps.live.com|
