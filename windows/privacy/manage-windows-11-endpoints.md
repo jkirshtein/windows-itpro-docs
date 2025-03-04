@@ -63,6 +63,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||HTTP|c-ring.msedge.net|
 |||TLSv1.2/HTTPS/HTTP|fp.msedge.net|
 |||TLSv1.2|I-ring.msedge.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*.msedge.net|
 |||HTTPS/HTTP|s-ring.msedge.net|
 |||HTTP|dual-s-ring.msedge.net|
 |||HTTP|creativecdn.com|
@@ -73,6 +74,33 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||TLSv1.2|prod-azurecdn-akamai-iris.azureedge.net|
 |||TLSv1.2|widgetcdn.azureedge.net|
 |||TLSv1.2|widgetservice.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*.azr.footprintdns.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.clo.footprintdns.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.azchcdnk.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.chinacloudapi.cn|
+|||TLSv1.2/TLSv1.3/HTTPS|*.blob.core.chinacloudapi.cn|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.azurecloudapp.de|
+|||TLSv1.2/TLSv1.3/HTTPS|azwancan.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|azwanp.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|azwantest2germany.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|geo.trafficmanager.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary-opaph.netmon.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.cloudapp.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.management.azure.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary-opaph.netmon.azure.us|
+|||TLSv1.2/TLSv1.3/HTTPS|*-canary.netmon.azure.us|
+|||TLSv1.2/TLSv1.3/HTTPS|afd.azureedge.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*.rp.afd.azureedge-test.net|
+|||TLSv1.2/TLSv1.3/HTTPS|afd.azureedge.us|
+|||TLSv1.2/TLSv1.3/HTTPS|*.z01.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|*-afd.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|graph.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|roxy.azurefd.net|
+|||TLSv1.2/TLSv1.3/HTTPS|fp-afd.azurefd.us|
+|||TLSv1.2/TLSv1.3/HTTPS|*.perf.linkedin.com|
+|||TLSv1.2/TLSv1.3/HTTPS|static-ecst.licdn.com|
+|||TLSv1.2/TLSv1.3/HTTPS|*.officeapps.live.com|
 |Device authentication|||[Learn how to turn off traffic to all of the following endpoint(s) for device authentication.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 ||The following endpoint is used to authenticate a device. If you turn off traffic for this endpoint, the device won't be authenticated.|HTTPS|login.live.com*|
 |Device metadata|||[Learn how to turn off traffic to all of the following endpoint(s) for device metadata.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
